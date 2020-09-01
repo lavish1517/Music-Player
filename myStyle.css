@@ -1,0 +1,561 @@
+/* Home Section */
+#Home{
+  background-image: url("Images/taylor-swift.jpg");
+  background-repeat: no-repeat;
+  background-position: top;
+  background-size: cover;
+}
+.header-container{
+  padding: 0px;
+margin-left:2%;
+margin-right:2%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  list-style: none;
+}
+.header-container li{
+  height: 100px;
+  width: 360px;
+  margin-top: 20px;
+}
+.header-container li a{
+  margin: auto;
+  color:yellow;
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  padding-top: 15px;
+  font-family: cursive;
+  letter-spacing: 6px;
+  font-weight: bold;
+  text-decoration:none;
+  transition: color 0.4s, border-bottom 4s;
+  animation: headerTextAnimation 2s ease-in-out infinite alternate;
+}
+.header-container li a:hover{
+  color:lightgray;
+  text-decoration: none;
+}
+@keyframes headerTextAnimation {
+  0%{
+    color:3px 3px 6px yellow;
+  }
+  100%{
+    text-shadow: 5px 5px 10px orange;
+  }
+}
+.logoImg{
+  align-items: center;
+  text-align: center;
+  height: 80%;
+  width: 45%;
+}
+.carousel{
+  margin: auto;
+  display: flex;
+  justify-content: center;
+}
+#carousel-item{
+  padding: 5vh;
+  margin-top: 2vh;
+  margin-bottom: 2vh;
+}
+.carousel-image{
+   height: 250px;
+   width: 380px;
+   transition: 250ms all;
+   position: relative;
+   box-shadow: inset;
+     box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.2);
+}
+.carousel-img-1{
+  margin-right:-180px;
+  z-index: 1;
+}
+.carousel-img-2{
+  transform: scale(1.2);
+  z-index: 3;
+}
+.carousel-img-3{
+  margin-left: -180px;
+  z-index: 1;
+}
+.carousel-image:hover{
+  transform: scale(1.4);
+  z-index: 5;
+}
+#caption h1{
+  font-size: 4.3rem;
+  font-weight: bold;
+  font-family: cursive;
+  text-align: center;
+  letter-spacing: 1.8px;
+  color: #ff1a1a;
+  margin-bottom: 10px;
+  animation: glow 4s ease-in-out infinite alternate;
+}
+@keyframes glow {
+  to{
+    text-shadow: 0px 0px 5px orange,0px 0px 10px orange,0px 0px 15px #4dffdb,0px 0px 20px #4dffdb,0px 0px 25px #4dffdb,0px 0px 30px #4dffdb,0px 0px 40px #4dffdb;
+  }
+  from{
+       text-shadow: 0px 0px 10px orange,0px 0px 15px #00ffcc,0px 0px 20px #00ffcc, 0px 0px 25px #00ffcc, 0px 0px 30px #00ffcc,0px 0px 35px #00ffcc,0px 0px 40px #00ffcc,0px 0px 45px ##00ffcc;
+  }
+}
+#About{
+  background-color: #f0d19e;
+  margin-top:-7px;
+}
+.about-para {
+    padding: 12px;
+    width: 80%;
+    height: 100%;
+    margin: auto;
+    font-family: cursive;
+    text-align: justify;
+    color: grey;
+    line-height: 30px;
+    font-weight: 150;
+    font-size: 1.4rem;
+}
+.text-highlight {
+    color: blue;
+    font-weight: 600;
+}
+ #container{
+  display:flex;
+  flex-direction:row;
+  flex-wrap:wrap;
+  justify-content:space-around;
+}
+/* ActorSection */
+.commomCard{
+  height:350px;
+  width:260px;
+  margin:30px;
+  cursor:pointer;
+   box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.2);
+   text-align:center;
+   background-color: white;
+}
+.commomCard img{
+   width:100%;
+    height:50%;
+}
+.actorName{
+  font-size: 27px;
+}
+.actorDescriptions{
+  color:gray;
+  font-size:17px;
+}
+.social-media-icons a{
+      text-decoration:none;
+      font-size:22px;
+      color:black;
+      margin:0 5px;
+}
+.social-media-icons a:hover{
+  opacity:0.7;
+}
+.contactItems{
+  border:none;
+  outline:0;
+  display: inline-block;
+padding: 8px;
+  color: white;
+   background-color: #000;
+ text-align: center;
+cursor: pointer;
+width: 100%;
+ font-size: 18px;
+}
+.contactItems:hover{
+  opacity:0.7;
+}
+#AmitabhCard{
+  border-bottom: 5px solid #0000CD;
+  background-color: #ffffe6;
+}
+
+/* //Music Section */
+.section-heading{
+  text-align: center;
+  font-size: 48px;
+  font-weight: 500;
+  font-family:cursive;
+  color:##00ffff;
+  opacity: 1;
+animation: myAnimation 2s ease-in-out infinite alternate;
+}
+@keyframes myAnimation {
+    from{
+      color:#00ffff;
+    }
+    to{
+      color:#3366cc;
+    }
+}
+.section-heading span{
+  color:red;
+}
+#Songs{
+  background-image: url("Images/1.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height:100%;
+}
+#scrolledImageSection{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.commomImageSection{
+  height:330px;
+  width:280px;
+  margin:20px;
+  cursor:pointer;
+   box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.2);
+   text-align:center;
+   background-color: #e6f2ff;
+   border: 2px solid gray;
+}
+.commomImageSection img{
+  height: 84%;
+  width: 100%;
+}
+.commomImageSection h1{
+  color:#ff9900;
+  font-size: 2rem;
+}
+/* Playing music section */
+#musicSection{
+  background-color:black;
+          background-position: center;
+          background-repeat: no-repeat;
+           background-size: cover;
+            }
+#funWithMusicSection{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content:space-around;
+  opacity: 0.9;
+}
+#pads{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+#pads > div{
+  margin: 50px;
+  height: 410px;
+  width: 450px;
+  transition: 250ms all;
+}
+#pads >div:hover{
+  transform: scale(1.2);
+}
+#pads > div img{
+  height: 100%;
+  width: 100%;
+   border-radius: 5%;
+  box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.2);
+}
+ .funWithMusicCommonClass{
+background-color: white;
+  height: 290px;
+  width: 225px;
+   max-width: 250px;
+  max-height: 400px;
+ box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+ align-items: center;
+ text-align: center;
+ cursor: pointer;
+ margin: 50px 50px;
+ opacity: 0.9;
+ }
+.funWithMusicCommonClass img{
+  height:78%;
+  width: 100%;
+  box-shadow: 0px 0px 20px black;
+}
+.audioSection audio{
+  width: 98%;
+}
+.audioSection1 audio{
+  width: 60%;
+}
+     /* Artist Container Section */
+      #Search{
+       /* background-image: linear-gradient(to right,rgb(255, 255, 230),rgb(230, 255, 255)); */
+       background-image: url("Images/image4.jpg");
+       background-position: center;
+       background-repeat: no-repeat;
+       background-size: cover;
+       opacity: 0.9;
+     }
+ #artistContainer{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  opacity: 1;
+}
+#artistContainer img{
+  height: 260px;
+  width: 260px;
+  text-align: center;
+  border-radius: 50%;
+  margin: 30px;
+animation: myAnimationArtist 2s ease-in-out infinite alternate;
+}
+@keyframes myAnimationArtist {
+  0%{
+      box-shadow: 0px 0px 1px #b3cccc,0px 0px 2px #b3cccc,0px 3px 0px #b3cccc,0px 0px 4px #b3cccc;
+  }
+  20%{
+      box-shadow: 0px 0px 2px #b3cccc,0px 0px 3px #85adad,0px 0px 4px #85adad,0px 0px 5px #85adad;
+  }
+
+}
+.section-heading-effect{
+  animation: textHeadingAnimation 2s ease-in-out infinite alternate;
+}
+@keyframes textHeadingAnimation {
+  from{
+    text-shadow: 0px 0px 2px #ff3333,0px 0px 4px #ffe6cc,0px 0px 6px #ffe6cc,0px 0px 8px #ffe6cc;
+  }
+  to{
+        text-shadow: 0px 0px 4px #ffe6cc,0px 0px 6px #ffcc99,0px 0px 8px #ffcc99,0px 0px 10px #ffcc99;
+  }
+}
+#getMusic input[type="text"]
+{
+  width: 360px;
+  height: 55px;
+  border-style: none;
+  background-color:#f5e6ff;
+  border: 0px solid transparent;
+  border-bottom: 2px solid #2f2f1e;
+  border-top-left-radius: 40px;
+  border-bottom-left-radius: 40px;
+  border-top-right-radius: 40px;
+  border-bottom-right-radius: 40px;
+  opacity: 1;
+  color:yellow;
+}
+.searchSong::placeholder{
+  text-align: center;
+  font-size: 1.4rem;
+  font-style: italic;
+  font-weight: 400;
+  color: #ffc266;
+}
+#getMusic button[type="button"]
+{
+  height: 53px;
+  width: 135px;
+  color:blue;
+  margin: 20px;
+  font-size: 1.4rem;
+  opacity: 1;
+  border-top-left-radius: 30px;
+  border-bottom-left-radius: 30px;
+  border-top-right-radius:30px;
+  border-bottom-right-radius: 30px;
+  color:yellow;
+}
+/* Contact Section */
+
+
+#Contact {
+    background-color: #0f0f0a;
+    padding-bottom: 40px;
+}
+.contact-section-heading{
+  color:#4d4dff;
+  text-align: center;
+  font-size: 2.6;
+  font-weight: bold;
+  font-family: cursive;
+}
+
+/* #Contact h1,
+#contact h1 span {
+    color: white;
+} */
+#contact-form {
+    margin-left: 20%;
+}
+#contact-container {
+    display: flex;
+}
+#my-details-container {
+    width: 35%;
+    margin-left: 5%;
+}
+
+#my-details-container h3 {
+    color: #a314f5;
+    font-weight: 550;
+    font-size: 1.2rem;
+    margin-top: 8px;
+}
+#contact-form-container {
+    width: 50%;
+}
+#my-details-container p {
+    color: #d9dcdd;
+    font-size: 0.9rem;
+}
+.my-details-info-container {
+    margin-bottom: 20px;
+    color: #d9dcdd;
+}
+.my-details-info-container span {
+    margin-left: 0.4rem;
+    font-size: 0.95rem;
+}
+.my-details-info-container i {
+    color: white;
+}
+.my-details-icon {
+    width: 1rem;
+    height: 1rem;
+    vertical-align: bottom;
+    margin-right: 0.5rem;
+}
+#contact-form input,
+textarea {
+    max-width: 90%;
+    margin: 15px;
+    padding: 4px 10px;
+    border: 0px solid transparent;
+    border-bottom: 2px solid white;
+    background: transparent;
+    width: 90%;
+    line-height: 1.6;
+    font-size: 1.05rem;
+    color:yellow;
+  }
+#contact-form button[type="submit"] {
+    background: transparent;
+    /*#1a1a1a;*/
+    font-size: 0.95rem;
+    border: 2px solid white;
+    margin-top: 5%;
+    margin-left: 35%;
+    border-radius: 2px;
+    color: white;
+    font-family: sans-serif;
+    font-weight: 700;
+    letter-spacing: 0.046875em;
+    line-height: 1;
+    padding: 0.8em 0.8em 0.78em;
+    text-transform: uppercase;
+}
+
+#contact-form button:hover {
+    background: white;
+    color:green;
+}
+#personal-details{
+  display:flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-left: -60px;
+  margin-top: 10px;
+}
+.person-name{
+  background-color: #ffb24c;
+  height: 90px;
+  width: 330px;
+  text-align: center;
+  font-size: 2rem;
+  margin-top: 15px;
+  box-shadow: 3px 3px 6px gray;
+}
+.person-name p{
+  margin: auto;
+  padding: 20px;
+  color:#a314f5;
+}
+.person-images{
+  height: 120px;
+  width: 120px;
+  position: relative;
+  left:50px;
+}
+.person-images img{
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  border:8px solid #ffb24c;
+}
+#contact .social-icons li a i {
+
+    font-size: 1.2rem;
+    margin: 40px 10px 10px;
+    padding: 10px 14px 20px 10px;
+}
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+.horizontal-list
+  {
+    list-style: none;
+    padding-left: 0px;
+    margin: 0px;
+    /* margin-top: 20px; */
+  }
+.horizontal-list li
+  {
+    display: inline-block;
+    margin: 10px 8px 8px 10px;
+    font-weight: 100;
+    font-size: 1.2rem;
+  }
+
+.horizontal-list li a
+  {
+    color: white;
+    text-decoration: none;
+  }
+.social-icons li a i
+ {
+    padding: 15px;
+    font-size: 1.3rem;
+    border-radius: 50%;
+    color: #ff5c33;
+    font-weight: bold;
+    animation: myAnimationIcon 5s ease-in-out infinite alternate;
+    margin:0px 5px 0px 5px;
+ }
+@keyframes myAnimationIcon
+  {
+    from
+     {
+       background-color:none;
+     }
+    33%
+     {
+       background-color:#c2d6d6;
+     }
+    66%
+     {
+       background-color: #a3c2c2;
+     }
+    to
+    {
+      background-color:#94b8b8;
+    }
+  }
+.social-icons li a i:hover {
+    box-shadow: 0px 0px 6px 4px rgba(230, 196, 196, 0.3);
+}
